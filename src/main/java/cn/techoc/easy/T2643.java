@@ -1,21 +1,7 @@
 package cn.techoc.easy;
 
-import java.util.Arrays;
 
 public class T2643 {
-    public static void main(String[] args) {
-        int[][] mat1 = {{0, 1}, {1, 0}};
-        int[][] mat2 = {{0, 0, 0}, {0, 1, 1}};
-        int[][] mat3 = {{0, 0}, {1, 1}, {0, 0}};
-        T2643 t2643 = new T2643();
-        int[] res1 = t2643.rowAndMaximumOnes(mat1);
-        int[] res2 = t2643.rowAndMaximumOnes(mat2);
-        int[] res3 = t2643.rowAndMaximumOnes(mat3);
-        System.out.println(Arrays.toString(res1));
-        System.out.println(Arrays.toString(res2));
-        System.out.println(Arrays.toString(res3));
-    }
-
     /**
      * <a href="https://leetcode.cn/problems/row-with-maximum-ones">2643. 一最多的行</a>
      *
