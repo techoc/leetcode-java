@@ -1,4 +1,4 @@
-package cn.techoc.easy;
+package cn.techoc.leetcode.easy;
 
 
 public class T2643 {
