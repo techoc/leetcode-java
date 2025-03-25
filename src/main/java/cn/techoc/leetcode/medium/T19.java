@@ -1,4 +1,4 @@
-package cn.techoc.medium;
+package cn.techoc.leetcode.medium;
 
 public class T19 {
     /**

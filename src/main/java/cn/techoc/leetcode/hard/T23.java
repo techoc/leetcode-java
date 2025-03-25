@@ -1,4 +1,4 @@
-package cn.techoc.hard;
+package cn.techoc.leetcode.hard;
 
 import java.util.PriorityQueue;
 
