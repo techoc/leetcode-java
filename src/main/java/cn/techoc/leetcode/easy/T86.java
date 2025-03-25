@@ -39,7 +39,7 @@ public class T86 {
         return dummy1.next;
     }
 
-    public class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 

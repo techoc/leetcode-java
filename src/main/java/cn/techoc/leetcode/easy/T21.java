@@ -33,7 +33,7 @@ public class T21 {
         return dummy.next;
     }
 
-    class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
