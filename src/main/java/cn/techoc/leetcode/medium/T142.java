@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.medium;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T142 {
     /**
      * <a href="https://leetcode.cn/problems/linked-list-cycle-ii">142. 环形链表 II</a>
@@ -25,15 +27,5 @@ public class T142 {
             fast = fast.next;
         }
         return slow;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
     }
 }

@@ -1,5 +1,8 @@
 package cn.techoc.leetcode.hard;
 
+import cn.techoc.leetcode.utils.ListNode;
+
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class T23 {
@@ -10,7 +13,8 @@ public class T23 {
      * @return listNode
      */
     public ListNode mergeKLists(ListNode[] lists) {
-        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        if (lists == null || lists.length == 0) return null;
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.val));
         for (ListNode list : lists) {
             if (list != null) {
                 pq.offer(list); // 把所有非空链表的头节点入堆
@@ -27,22 +31,5 @@ public class T23 {
             cur = cur.next; // 准备合并下一个节点
         }
         return dummy.next; // 哨兵节点的下一个节点就是新链表的头节点
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

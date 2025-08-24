@@ -9,7 +9,7 @@ public class T1423 {
      * @return - 你可以获得的最大点数
      */
     public int maxScore(int[] cardPoints, int k) {  // 转换为求长度为 cardPoints.length - k 的最小子数组和
-        int left = 0, right = 0, sum = 0, min = 0;
+        int left = 0, right = 0, sum = 0, min;
         int total = 0;
         for (int cardPoint : cardPoints) {
             total += cardPoint;

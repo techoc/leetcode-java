@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.easy;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T876 {
     /**
      * <a href="https://leetcode.cn/problems/middle-of-the-linked-list/">876. 链表的中间结点</a>
@@ -14,22 +16,5 @@ public class T876 {
             fast = fast.next.next;  // fast走两步
         }
         return slow;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

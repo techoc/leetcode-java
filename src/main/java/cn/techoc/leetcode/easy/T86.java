@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.easy;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T86 {
 
     /**
@@ -37,22 +39,5 @@ public class T86 {
         // 将 dummy2 中的节点连接到 dummy1 中
         cur1.next = dummy2.next;
         return dummy1.next;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

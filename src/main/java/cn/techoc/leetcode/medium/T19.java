@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.medium;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T19 {
     /**
      * <a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/">19. 删除链表的倒数第 N 个结点</a>
@@ -31,22 +33,5 @@ public class T19 {
         }
         slow.next = slow.next.next;
         return dummy.next;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

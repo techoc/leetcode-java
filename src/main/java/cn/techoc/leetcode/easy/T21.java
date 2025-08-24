@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.easy;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T21 {
 
 
@@ -31,23 +33,6 @@ public class T21 {
         if (p1 != null) cur.next = p1;
         if (p2 != null) cur.next = p2;
         return dummy.next;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
 }

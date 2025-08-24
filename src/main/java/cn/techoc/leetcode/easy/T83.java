@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.easy;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T83 {
     /**
      * <a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list">83. 删除排序链表中的重复元素</a>
@@ -22,22 +24,5 @@ public class T83 {
         // 断开与后面重复元素的连接
         slow.next = null;
         return head;
-    }
-
-    private class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

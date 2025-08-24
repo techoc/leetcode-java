@@ -1,5 +1,7 @@
 package cn.techoc.leetcode.easy;
 
+import cn.techoc.leetcode.utils.ListNode;
+
 public class T160 {
     /**
      * <a href="https://leetcode.cn/problems/intersection-of-two-linked-lists">160. 相交链表</a>
@@ -17,15 +19,4 @@ public class T160 {
         }
         return pA;
     }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
-
 }
