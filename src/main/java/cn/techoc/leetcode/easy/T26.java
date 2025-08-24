@@ -8,14 +8,19 @@ public class T26 {
      * @return 无重复元素的数组长度
      */
     public int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         // 快慢指针
-        int slow = 0, fast = 1;
+        int fast = 0, slow = 0;
+        // 快指针遍历数组
         while (fast < nums.length) {
-            if (nums[fast] != nums[slow]) {
+            if (nums[fast] == nums[slow]) { // 如果快指针和满指针值相等 则快指针后移
+                fast++;
+            } else { // 否则慢指针后移 并将快指针的值赋给慢指针
                 slow++;
                 nums[slow] = nums[fast];
             }
-            fast++;
         }
         return slow + 1;
     }
