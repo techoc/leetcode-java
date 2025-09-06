@@ -20,8 +20,8 @@ public class T380 {
         Random random;
 
         public RandomizedSet() {
-            nums = new ArrayList<Integer>();
-            indices = new HashMap<Integer, Integer>();
+            nums = new ArrayList<>();
+            indices = new HashMap<>();
             random = new Random();
         }
 
