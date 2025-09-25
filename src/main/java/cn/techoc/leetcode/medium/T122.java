@@ -13,10 +13,8 @@ public class T122 {
         for (int i = 1; i < prices.length; i++) {
             if (prices[i] > minPrice) {
                 maxProfit += prices[i] - minPrice;
-                minPrice = prices[i];
-            } else {
-                minPrice = prices[i];
             }
+            minPrice = prices[i];
         }
         return maxProfit;
     }
