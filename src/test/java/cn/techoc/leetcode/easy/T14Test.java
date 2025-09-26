@@ -3,7 +3,6 @@ package cn.techoc.leetcode.easy;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * 测试类：T14
@@ -74,7 +73,7 @@ class T14Test {
      */
     @Test
     void testLongestCommonPrefix_NullInput() {
-        assertThrows(NullPointerException.class, () -> t14.longestCommonPrefix(null));
+        assertEquals("", t14.longestCommonPrefix(null));
     }
 
     /**
@@ -82,6 +81,6 @@ class T14Test {
      */
     @Test
     void testLongestCommonPrefix_EmptyArray() {
-        assertThrows(ArrayIndexOutOfBoundsException.class, () -> t14.longestCommonPrefix(new String[]{}));
+        assertEquals("", t14.longestCommonPrefix(new String[]{}));
     }
 }
