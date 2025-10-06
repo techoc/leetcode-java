@@ -11,6 +11,9 @@ public class T76 {
      * @return 最小覆盖子串
      */
     public String minWindow(String s, String t) {
+        if (s.length() < t.length() || t.isEmpty()) {
+            return "";
+        }
         // 记录 window 中的字符出现次数
         HashMap<Character, Integer> window = new HashMap<>();
         // 记录所需的字符出现次数
