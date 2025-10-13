@@ -111,13 +111,13 @@ class T219Test {
 
     /**
      * 测试用例 TC09: k = 0
-     * 输入: nums = [99,99], k = 0
+     * 输入: nums = [1,2,1], k = 0
      * 预期输出: true
      */
     @Test
     void testContainsNearbyDuplicate_KIsZero() {
-        int[] nums = {99, 99};
+        int[] nums = {1, 2, 1};
         int k = 0;
-        assertTrue(t219.containsNearbyDuplicate(nums, k));
+        assertFalse(t219.containsNearbyDuplicate(nums, k));
     }
 }
