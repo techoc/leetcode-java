@@ -26,6 +26,9 @@ public class T128 {
             }
             // 找到当前最大连续序列长度
             res = Math.max(res, y - i);
+            if (res * 2 >= set.size()) { // 当前序列长度大于数组长度的一半时 已经可以确定返回结果 提前返回
+                return res;
+            }
         }
         return res;
     }
