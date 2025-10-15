@@ -16,6 +16,18 @@ public class ListNode {
         this.next = next;
     }
 
+    public ListNode(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            throw new IllegalArgumentException("nums can not be empty");
+        }
+        this.val = nums[0];
+        ListNode cur = this;
+        for (int i = 1; i < nums.length; i++) {
+            cur.next = new ListNode(nums[i]);
+            cur = cur.next;
+        }
+    }
+
     /**
      * 获取链表长度辅助方法
      */
