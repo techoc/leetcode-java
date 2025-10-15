@@ -4,7 +4,6 @@ import cn.techoc.leetcode.utils.ListNode;
 
 public class T21 {
 
-
     /**
      * <a href="https://leetcode.cn/problems/merge-two-sorted-lists/">21. 合并两个有序链表</a>
      *
