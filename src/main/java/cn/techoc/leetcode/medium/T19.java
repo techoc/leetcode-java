@@ -26,7 +26,7 @@ public class T19 {
             }
         }
         if (fast != null) {  // 判断一下
-            while (fast.next != null) { // 再一起走
+            while (fast.next != null) { // 再一起走 直到 fast 走到末尾 则 slow 走到倒数第n个节点
                 fast = fast.next;
                 slow = slow.next;
             }
